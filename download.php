@@ -36,7 +36,7 @@ if (!$file_id) {
                 if (mysqli_num_rows($result) > 0) {
                     if ($row = mysqli_fetch_assoc($result)) {
                 ?>
-                <a href="uploads/<?php echo $row['new_name']; ?>" download="<?php echo $row['name']; ?>" class="download_link"><?php echo $row['name']; ?></a>
+                <a href="./uploads/<?php echo $row['new_name']; ?>" download="<?php echo $row['name']; ?>" class="download_link"><?php echo $row['name']; ?></a>
                 <?php
                     }
                 }
