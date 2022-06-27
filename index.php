@@ -24,17 +24,17 @@ if (isset($_POST['upload'])) { // If isset upload button or not
 	if ($file_size > 10485760) { // Check file size 10mb or not
 		echo "<script>alert('Woops! File is too big. Maximum file size allowed for upload 10 MB.')</script>";
 	} else {
-		$sql = "INSERT INTO uploaded_files (name, new_name)
+		$sql = "INSERT INTO pushed (name, new_name)
 				VALUES ('$file_name', '$file_new_name')";
 		$result = mysqli_query($conn, $sql);
 		if ($result) {
 			move_uploaded_file($file_temp, $location . $file_new_name);
 			echo "<script>alert('Wow! File uploaded successfully.')</script>";
 			// Select id from database
-			$sql = "SELECT id FROM uploaded_files ORDER BY id DESC";
+			$sql = "SELECT file_id FROM  pushed ORDER BY file_id DESC";
 			$result = mysqli_query($conn, $sql);
 			if ($row = mysqli_fetch_assoc($result)) {
-				$link = $base_url . "download.php?id=" . $row['id'];
+				$link = $base_url . "download.php?file_id=" . $row['file_id'];
 				$link_status = "display: block;";
 			}
 		} else {

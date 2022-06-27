@@ -1,10 +1,10 @@
 <?php 
 
-include 'config.php';
+include './config.php';
 
-$id = $_GET['id']; // Get id from url bar
+$file_id = $_GET['file_id']; // Get id from url bar
 
-if (!$id) {
+if (!$file_id) {
     header("Location: index.php");
 }
 
@@ -31,7 +31,7 @@ if (!$id) {
 			<div class="download">
                 <?php 
                     
-                $sql = "SELECT * FROM uploaded_files WHERE id='$id'";
+                $sql = "SELECT * FROM pushed WHERE file_id='$file_id'";
                 $result = mysqli_query($conn, $sql);
                 if (mysqli_num_rows($result) > 0) {
                     if ($row = mysqli_fetch_assoc($result)) {

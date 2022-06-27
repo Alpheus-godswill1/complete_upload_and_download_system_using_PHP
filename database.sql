@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `uploaded_files`
 --
 
-CREATE TABLE `uploaded_files` (
-  `id` int(11) NOT NULL,
+CREATE TABLE `pushed` (
+  `file_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `new_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -38,7 +38,7 @@ CREATE TABLE `uploaded_files` (
 -- Dumping data for table `uploaded_files`
 --
 
-INSERT INTO `uploaded_files` (`id`, `name`, `new_name`) VALUES
+INSERT INTO `pushed` (`file_id`, `name`, `new_name`) VALUES
 (1, 'text-animation.zip', '2711201606481769text-animation.zip'),
 (2, 'TL.png', '2711201606481879TL.png'),
 (3, 'TL.png', '2711201606482588TL.png'),
@@ -53,8 +53,8 @@ INSERT INTO `uploaded_files` (`id`, `name`, `new_name`) VALUES
 --
 -- Indexes for table `uploaded_files`
 --
-ALTER TABLE `uploaded_files`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `pushed`
+  ADD PRIMARY KEY (`fileid`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -63,8 +63,8 @@ ALTER TABLE `uploaded_files`
 --
 -- AUTO_INCREMENT for table `uploaded_files`
 --
-ALTER TABLE `uploaded_files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+ALTER TABLE `pushed`
+  MODIFY `file_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
