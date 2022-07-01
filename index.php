@@ -66,7 +66,7 @@ if (isset($_POST['upload'])) { // If isset upload button or not
 			<!-- Sharable Link Code -->
 			<input type="checkbox" id="link_checkbox">
 			<input type="text" value="<?php echo $link; ?>" id="link" readonly>
-			<label for="link_checkbox" style="<?php echo $link_status; ?>">Get Sharable Link</label>
+			<label for="link_checkbox" style="<?php echo $link_status; ?>">Get Sharable/download Link</label>
 
 			<input type="file" name="file" id="upload" required>
 			<label for="upload">

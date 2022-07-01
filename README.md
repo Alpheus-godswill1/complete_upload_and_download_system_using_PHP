@@ -16,4 +16,11 @@ CREATE TABLE pushed (
     	new_name text not null ,
 );
 
-## Ensure to go through the database.sql file 
+## Ensure to go through the database.sql file
+
+## Note you must upload file before you can download.
+
+## To download the uploaded file get the link from the :
+1. `` get sharable link ``
+2. Go to a new page on the browser and paste the url 
+3. A page will pop up then download the uploaded file from the download.php file
