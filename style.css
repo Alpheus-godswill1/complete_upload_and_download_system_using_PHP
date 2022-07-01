@@ -132,10 +132,10 @@ label[for="link_checkbox"] {
 .download .download_link {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    background: rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.637);
     padding: .5rem 2rem;
     border-radius: 3px;
-    opacity: .8;
+    opacity: 1;
     transition: .3s;
 }
 

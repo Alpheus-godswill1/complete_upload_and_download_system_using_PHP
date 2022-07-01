@@ -11,6 +11,6 @@ if (!$conn) {
     die("<script>alert('Connection Failed.')</script>");
 }
 
-$base_url = "http://localhost/complete_upload_and_download_system/"; // Website url
+$base_url = "http://localhost/complete_upload_and_download_system_using_PHP/"; // Website url
 
 ?>
