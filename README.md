@@ -1,3 +1,4 @@
+
 # PRE-REQUISITE: To get started with this project.
 1. You must be acquainted with the tools below .
 >>XAMPP control panel.
@@ -7,6 +8,9 @@
 1. navigate to your browser i prefer you use `` google chrome ``.
 2. type `` localhost/phpmyadmin ``
 3. Then create a database called `` database_search `` .
+
+## please note every code in here was gotten from :
+1. pure coding tutorial 
 
 ### On the sql page in the localhost/phpmyadmin, to create the TABLE needed for this project .
 1. type the code below on the sql page
