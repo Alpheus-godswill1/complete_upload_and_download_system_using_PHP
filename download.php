@@ -34,9 +34,9 @@ if (!$file_id) {
                 $sql = "SELECT * FROM pushed WHERE file_id='$file_id'";
                 $result = mysqli_query($conn, $sql);
                 if (mysqli_num_rows($result) > 0) {
-                    if ($row = mysqli_fetch_assoc($result)) {
+                    while ($row = mysqli_fetch_assoc($result)) {
                 ?>
-                <a href="./uploads/<?php echo $row['new_name']; ?>" download="<?php echo $row['name']; ?>" class="download_link"><?php echo $row['name']; ?></a>
+                <a href="./uploads/<?php echo $row['new_name']; ?>" download="<?php echo $row['name']; ?>" class="download_link"><?php echo $row['name']; ?>Download</a>
                 <?php
                     }
                 }
