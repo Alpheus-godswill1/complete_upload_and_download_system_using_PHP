@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `file_upload_tutorial`
+-- Database: `upload_system_fild`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `uploaded_files`
+-- Table structure for table `pushed`
 --
 
 CREATE TABLE `pushed` (
@@ -35,7 +35,7 @@ CREATE TABLE `pushed` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `uploaded_files`
+-- Dumping data for table `pushed`
 --
 
 INSERT INTO `pushed` (`file_id`, `name`, `new_name`) VALUES
@@ -51,17 +51,17 @@ INSERT INTO `pushed` (`file_id`, `name`, `new_name`) VALUES
 --
 
 --
--- Indexes for table `uploaded_files`
+-- Indexes for table `pushed`
 --
 ALTER TABLE `pushed`
-  ADD PRIMARY KEY (`fileid`);
+  ADD PRIMARY KEY (`file_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `uploaded_files`
+-- AUTO_INCREMENT for table `pushed`
 --
 ALTER TABLE `pushed`
   MODIFY `file_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
